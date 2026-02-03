@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Airport Survey</h1>
+    <p id="description">Please fill out this small survey so that we can improve upon your flying experience.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" required placeholder="John Doe">
+      <br>
+      <label id="email-label" for="email">Email</label>
+      <input required type="email" id="email" placeholder="example@email.com">
+      <br>
+      <label id="number-label" for="number">Number</label>
+      <input type="number" id="number" min="1000000000" max="9999999999" placeholder="5555555555">
+      </fieldset>
+      <fieldset>
+        <legend>Ratings</legend>
+      <label for="dropdown">How was your Check-in Experience?</label>
+      <select id="dropdown">
+        <option value="poor">Poor</option>
+        <option value="satisfactory">Satisfactory</option>
+        <option value="good">Good</option>
+        <option value="very-good">Very Good</option>
+        <option selected value="excellent">Excellent</option>
+      </select>
+      </fieldset>
+      <fieldset>
+        <legend>Was this your First Time Flying?</legend>
+      <label for="yes-option">Yes</label>
+      <input id="yes-option" type="radio" name="radio" value="yes">
+      <label for="no-option">No</label>
+      <input id="no-option" type="radio" name="radio" value="no">
+      </fieldset>
+      <fieldset>
+        <legend>What did you Like About our Service</legend>
+        <label for="food">Food</label>
+      <input type="checkbox" value="food">
+      <label for="stores">Stores</label>
+      <input type="checkbox" value="stores">
+      <label for="security">Security</label>
+      <input type="checkbox" value="security">
+      <label for="cleanliness">Cleanliness</label>
+      <input type="checkbox" value="cleanliness">
+      </fieldset>
+      <label for="comments">Other Comments?</label>
+      <textarea id="comments" placeholder="comment"></textarea>
+      <br>
+      <button id="submit" type="submit">Submit</submit>
+    </form>
+  </body>
+</html>
