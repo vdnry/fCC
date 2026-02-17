@@ -1,0 +1,32 @@
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.navbar {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    background-color: white;
+  }
+
+  .navbar {
+    padding-left: 20px;
+    padding-right: 50px;
+    margin-right: 50px;
+    border-right: 1px solid black;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+  }
+}
